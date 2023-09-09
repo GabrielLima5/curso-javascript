@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Formulário de Cadastro</h1>
+
+    <h4 id="boas-vindas"></h4>
+    <form onsubmit="pegarDados(event)">
+      <label for="name">Digite seu nome</label>
+      <input type="text" id="nome" name="nome" />
+
+      <label for="email">Digite seu email</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="tel">Digite seu telefone</label>
+      <input type="tel" id="tel" name="tel" />
+
+      <label for="senha">Digite sua senha</label>
+      <input type="password" id="senha" name="senha" />
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <script src="formularios.js"></script>
+  </body>
+</html>

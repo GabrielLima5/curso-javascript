@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeouts e intervalos</title>
+  </head>
+  <body>
+    <h1></h1>
+
+    <button type="submit" id="a">Desligar interval</button>
+    <button type="submit" id="b">Desligar timeout</button>
+
+    <script>
+      const idTimeout = setTimeout(function () {
+        document.querySelector("h1").style.color = "red";
+        console.log("Seja bem-vindo!");
+      }, 10000);
+
+      let contador = 0;
+
+      const idInterval = setInterval(function () {
+        contador++;
+        document.querySelector("h1").innerHTML = contador;
+        console.log(contador);
+      }, 1000);
+
+      const botaoInterval = document.querySelector("#a");
+      const botaoTimeout = document.querySelector("#b");
+      botaoInterval.addEventListener("click", function () {
+        clearInterval(idInterval);
+      });
+
+      botaoTimeout.addEventListener("click", function () {
+        clearTimeout(idTimeout);
+      });
+    </script>
+  </body>
+</html>

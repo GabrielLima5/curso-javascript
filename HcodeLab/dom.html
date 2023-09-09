@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+      #caixa {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+
+      #caixa2 {
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+      }
+
+      .nota-verde {
+        color: rgb(0, 255, 0);
+      }
+
+      .nota-vermelha {
+        color: rgb(255, 0, 0);
+      }
+    </style>
+  </head>
+  <body class="vermelho">
+    <div id="caixa"></div>
+
+    <div id="caixa2"></div>
+
+    <h2>
+      Você realizou a prova do HcodeLab. Seu aproveitamento foi:
+      <span>70%</span>.
+    </h2>
+
+    <form>
+      <input type="text" name="nome" id="nome" />
+      <button type="button">Submit</button>
+    </form>
+
+    <script>
+      console.dir(document.body);
+      /*console.dir((document.body.children[0].style.backgroundColor = "green"));
+      console.log(document.getElementById("caixa"));
+      console.log(document.getElementsByTagName("div")[1]);
+      console.log(document.getElementsByClassName("vermelho"));
+      console.log(document.querySelector("body"));
+      console.log(document.querySelector("#caixa"));
+      console.log(document.querySelector("#caixa2"));
+      console.log(document.querySelectorAll("div"));*/
+
+      const nota = 60;
+      const tagSpan = document.querySelector("span");
+      tagSpan.innerHTML = `${nota}%`;
+
+      tagSpan.className = nota >= 70 ? "nota-verde" : "nota-vermelha";
+      /*if (nota >= 70) {
+        tagSpan.classList.add("nota-verde");
+      } else {
+        tagSpan.classList.add("nota-vermelha");
+      }*/
+    </script>
+  </body>
+</html>

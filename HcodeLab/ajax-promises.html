@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX</title>
+  </head>
+  <body>
+    <button type="button">Carregar lista</button>
+
+    <script>
+      function getProdutos() {
+        return new Promise((sucesso, reject) => {
+          const ajax = new XMLHttpRequest();
+
+          ajax.onload = () => {
+            sucesso(JSON.parse(ajax.responseText));
+          };
+
+          ajax.onerror = () => {
+            reject(ajax);
+          };
+
+          ajax.open("GET", "http://localhost:4000/produtos");
+
+          ajax.send();
+        });
+      }
+
+      document.querySelector("button").addEventListener("click", (e) => {
+        getProdutos()
+          .then((respostaJSON) => {
+            console.log(respostaJSON);
+          })
+          .catch((respostaAJAX) => {
+            console.error(respostaAJAX);
+          });
+      });
+    </script>
+  </body>
+</html>

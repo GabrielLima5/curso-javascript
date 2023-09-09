@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: blue;
+}
+
+#mudar-cor{
+    display: inline-block;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    background: black;
+    padding: 8px 10px;
+}
