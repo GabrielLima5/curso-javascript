@@ -1,0 +1,16 @@
+{
+  "name": "projeto-express",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "nodemon index",
+    "start": "node start"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "nedb": "^1.8.0"
+  }
+}
