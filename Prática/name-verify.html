@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificador de nomes</title>
+    <style>
+      body {
+        font-size: 2em;
+        color: white;
+        height: 100vh;
+        margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: coral;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      label {
+        margin-bottom: 15px;
+      }
+
+      input {
+        font-size: 1.2em;
+        width: 700px;
+        height: 50px;
+      }
+
+      button {
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        width: 300px;
+        height: 50px;
+        background-color: blueviolet;
+        color: white;
+        font-size: 1.3em;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+
+      p {
+        width: 700px;
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Verificador de nomes</h1>
+    <label for="fullname">Digite seu nome completo:</label>
+    <input id="fullname" type="text" placeholder="Nome" />
+    <button type="button">Enviar</button>
+    <p class="name-desc"></p>
+
+    <script>
+      let label = document.querySelector("label");
+      let input = document.querySelector("input");
+      label.style.display = "none";
+      input.style.display = "none";
+      let button = document.querySelector("button");
+      button.innerHTML = "Começar";
+
+      button.addEventListener("click", (e) => {
+        let name = prompt("Digite seu nome completo:");
+        let nameSplit = name.split(" ");
+        let firstname = nameSplit[0];
+        let showname = document.querySelector(".name-desc");
+        showname.innerHTML = `Olá ${firstname}! É muito bom ter você por aqui, seja bem-vindo. Aqui vão algumas estatísticas sobre o seu nome:
+          Ele possui ${name.length} letras.`;
+      });
+    </script>
+  </body>
+</html>

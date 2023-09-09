@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sua idade</title>
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 4em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="age"></h1>
+
+    <h1 id="underage"></h1>
+
+    <h1 id="month"></h1>
+
+    <h1 id="days"></h1>
+    <script>
+      let idade = prompt("Digite aqui sua idade:");
+      let age = document.querySelector("#age");
+      let underage = document.querySelector("#underage");
+      let month = document.querySelector("#month");
+      let days = document.querySelector("#days");
+      let monthCalc = idade * 12;
+      let daysCalc = idade * 365;
+
+      age.textContent = "Você possui " + idade + " anos de idade.";
+      idade < 18
+        ? (underage.textContent = "Você é menor de idade")
+        : (underage.textContent = "Você é maior de idade.");
+      month.textContent =
+        "Você já viveu por aproximadamente " + monthCalc + " meses.";
+      days.textContent =
+        "Você já viveu por aproximadamente " + daysCalc + " dias.";
+    </script>
+  </body>
+</html>
