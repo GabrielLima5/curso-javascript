@@ -4,6 +4,7 @@
 </p>
 Este repositório é um registro do meu progresso e aprendizado durante o Curso Completo de JavaScript da <a href="https://hcode.com.br/">Hcode Treinamentos</a>, que ocorreu de 07 de janeiro de 2023 a 28 de março de 2023.
 Ele contém todos os recursos do curso, incluindo códigos-fonte dos projetos, exemplos práticos, exercícios e materiais didáticos.
+
 ## Sobre o Curso
 Este curso marcou o meu primeiro contato com uma linguagem de programação. Durante esse período, mergulhei profundamente nos fundamentos do JavaScript e adquiri conhecimentos essenciais em programação, incluindo:
 
