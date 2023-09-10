@@ -1,4 +1,4 @@
-# curso-javascript-hcode
+# <p align="center">Curso Completo de JavaScript - Hcode</p>
 <p align="center">
   <img src="https://github.com/GabrielLima5/curso-javascript-hcode/raw/main/Certificado/certificate.jpg" alt="Certificado">
 </p>
