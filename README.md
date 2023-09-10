@@ -6,6 +6,7 @@ Este repositório é um registro do meu progresso e aprendizado durante o Curso 
 Ele contém todos os recursos do curso, incluindo códigos-fonte dos projetos, exemplos práticos, exercícios e materiais didáticos.
 ## Sobre o Curso
 Este curso marcou o meu primeiro contato com uma linguagem de programação. Durante esse período, mergulhei profundamente nos fundamentos do JavaScript e adquiri conhecimentos essenciais em programação, incluindo:
+
 * **Lógica de Programação**: Revisei conceitos fundamentais, como algoritmos, pseudocódigos e teste de mesa. Também aprendi os princípios básicos da programação, incluindo o uso de variáveis, comandos de decisão (if, else, switch) e comandos de repetição (for, while, do while).
 
 * **História do JavaScript**: Explorei a história e a evolução do JavaScript como uma linguagem de programação poderosa. Aprendi também sobre padrões de digitação, como camel case e kebab case.
